@@ -1,0 +1,22 @@
+{
+  "name": "agent-bot-studio-ios",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "doctor": "expo-doctor"
+  },
+  "dependencies": {
+    "expo": "~57.0.21",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo-secure-store": "~57.0.4"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^57.0.0"
+  }
+}
