@@ -1,3 +1,13 @@
+# Agent Bot Studio — Free Safari Edition
+
+**NEW: Browser version for iPhone and iPad — no App Store required.** Open [index.html](./index.html) or enable GitHub Pages at **Settings → Pages → Deploy from a branch → main / (root)**. After Pages is enabled, the expected site address is `https://hostkris.github.io/Agent-bot-studio/` (verify the deployment before calling it live).
+
+The free local mode includes a bot roster, Marketing Manager, personal agent profiles, chat records, assignments, local content drafts, approvals, manual routines, backups, and offline frontend caching. An optional self-hosted backend can provide real Grok responses; provider or server costs are separate. Nothing automatically posts or sends messages. [Full free edition instructions](docs/FREE_SAFARI_EDITION.md).
+
+---
+
+## Previous iOS prototype and server
+
 # Agent Bot Studio — iOS Marketing Agent (Milestone 01)
 
 An **independent, original iPhone app** inspired by the *interaction patterns* of [OpenMausBot](https://github.com/milind-soni/OpenMausBot) and the marketing-first workflow of [Grok's Distro Bot](https://x.ai/bot/marketplace/bots/distro-bot). It is **not** their source code, brand, assets, services, or an official xAI Grok Bot client. No private/proprietary code was copied.
