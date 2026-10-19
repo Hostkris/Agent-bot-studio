@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Agent Bot Studio — Free Safari Edition",
+  "short_name": "Agent Bot Studio",
+  "description": "An original, free Safari agent workspace",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a1019",
+  "theme_color": "#0a1019",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
