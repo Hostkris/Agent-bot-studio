@@ -1,6 +1,6 @@
 # Agent Bot Studio — Free Safari Edition
 
-**NEW: Browser version for iPhone and iPad — no App Store required.** Open [index.html](./index.html) or enable GitHub Pages at **Settings → Pages → Deploy from a branch → main / (root)**. After Pages is enabled, the expected site address is `https://hostkris.github.io/Agent-bot-studio/` (verify the deployment before calling it live).
+**NEW: Browser version for iPhone and iPad — no App Store required.** Open [index.html](./index.html) or enable GitHub Pages at **Settings → Pages → Build and deployment → Source: GitHub Actions**. After Pages is enabled, the expected site address is `https://hostkris.github.io/Agent-bot-studio/` (verify the deployment before calling it live).
 
 The free local mode includes a bot roster, Marketing Manager, personal agent profiles, chat records, assignments, local content drafts, approvals, manual routines, backups, and offline frontend caching. An optional self-hosted backend can provide real Grok responses; provider or server costs are separate. Nothing automatically posts or sends messages. [Full free edition instructions](docs/FREE_SAFARI_EDITION.md).
 
