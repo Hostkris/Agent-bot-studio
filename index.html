@@ -19,7 +19,29 @@
 
 </style>
   <title>Agent Bot Studio — Free Safari Edition</title>
-<script defer>
+
+</head>
+<body>
+  <div class="shell">
+    <aside id="sidebar" class="sidebar" aria-label="Agent list">
+      <div class="logo"><span class="brand-mark" aria-hidden="true">✳</span><div><strong>AGENT BOT STUDIO</strong><small>Free Safari Edition</small></div></div>
+      <div class="side-caption">YOUR WORKFORCE <span id="agentCount">01</span></div>
+      <div id="botList" class="bot-list"></div>
+      <button id="addBot" class="new-bot">＋ Create new bot</button>
+      <div class="sidebar-foot"><div class="privacy-dot"></div><span>Private browser workspace</span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><button id="rosterToggle" class="mobile-icon" aria-label="Show bot roster">☷</button><div class="top-agent"><div id="topAvatar" class="tiny-avatar">M</div><div><strong id="topName">Mira</strong><small id="topRole">Marketing Agent</small></div></div><div class="top-actions"><span class="status-badge" id="backendStatus">● LOCAL MODE</span><button id="topNew" class="icon-button" title="New bot" aria-label="Create new bot">＋</button></div></header>
+      <nav class="section-nav" aria-label="Workspace sections"><button data-page="chat">Chat</button><button data-page="tasks">Assignments</button><button data-page="approvals">Approvals <span id="approvalCount"></span></button><button data-page="profile">Profile</button><button data-page="settings">Connections</button></nav>
+      <main id="main" class="main" aria-live="polite"></main>
+      <form id="composer" class="composer" hidden><label for="messageInput" class="sr-only">Message</label><textarea id="messageInput" rows="1" maxlength="6000" placeholder="Give your agent an assignment…"></textarea><button id="sendMessage" type="submit" class="send-button" aria-label="Send message">➤</button></form>
+      <nav id="mobileNav" class="mobile-nav" aria-label="Mobile workspace navigation"><button data-page="chat"><span>◉</span>Chat</button><button data-page="tasks"><span>▤</span>Tasks</button><button data-page="approvals"><span>✓</span>Approvals</button><button data-page="profile"><span>♙</span>Profile</button><button data-page="settings"><span>⚙</span>Settings</button></nav>
+    </div>
+  </div>
+  <div id="shade" class="shade" hidden></div>
+  <div id="modal" class="modal-backdrop" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="closeModal" class="modal-close" aria-label="Close">×</button><h2 id="modalTitle">New bot</h2><div id="modalBody"></div></div></div>
+  <div id="toast" role="status" class="toast" hidden></div>
+<script>
 /* Agent Bot Studio — original Safari-first UI. No OpenMausBot proprietary code. */
 (() => {
   'use strict';
@@ -76,26 +98,5 @@
 })();
 
 </script>
-</head>
-<body>
-  <div class="shell">
-    <aside id="sidebar" class="sidebar" aria-label="Agent list">
-      <div class="logo"><span class="brand-mark" aria-hidden="true">✳</span><div><strong>AGENT BOT STUDIO</strong><small>Free Safari Edition</small></div></div>
-      <div class="side-caption">YOUR WORKFORCE <span id="agentCount">01</span></div>
-      <div id="botList" class="bot-list"></div>
-      <button id="addBot" class="new-bot">＋ Create new bot</button>
-      <div class="sidebar-foot"><div class="privacy-dot"></div><span>Private browser workspace</span></div>
-    </aside>
-    <div class="workspace">
-      <header class="topbar"><button id="rosterToggle" class="mobile-icon" aria-label="Show bot roster">☷</button><div class="top-agent"><div id="topAvatar" class="tiny-avatar">M</div><div><strong id="topName">Mira</strong><small id="topRole">Marketing Agent</small></div></div><div class="top-actions"><span class="status-badge" id="backendStatus">● LOCAL MODE</span><button id="topNew" class="icon-button" title="New bot" aria-label="Create new bot">＋</button></div></header>
-      <nav class="section-nav" aria-label="Workspace sections"><button data-page="chat">Chat</button><button data-page="tasks">Assignments</button><button data-page="approvals">Approvals <span id="approvalCount"></span></button><button data-page="profile">Profile</button><button data-page="settings">Connections</button></nav>
-      <main id="main" class="main" aria-live="polite"></main>
-      <form id="composer" class="composer" hidden><label for="messageInput" class="sr-only">Message</label><textarea id="messageInput" rows="1" maxlength="6000" placeholder="Give your agent an assignment…"></textarea><button id="sendMessage" type="submit" class="send-button" aria-label="Send message">➤</button></form>
-      <nav id="mobileNav" class="mobile-nav" aria-label="Mobile workspace navigation"><button data-page="chat"><span>◉</span>Chat</button><button data-page="tasks"><span>▤</span>Tasks</button><button data-page="approvals"><span>✓</span>Approvals</button><button data-page="profile"><span>♙</span>Profile</button><button data-page="settings"><span>⚙</span>Settings</button></nav>
-    </div>
-  </div>
-  <div id="shade" class="shade" hidden></div>
-  <div id="modal" class="modal-backdrop" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="closeModal" class="modal-close" aria-label="Close">×</button><h2 id="modalTitle">New bot</h2><div id="modalBody"></div></div></div>
-  <div id="toast" role="status" class="toast" hidden></div>
 </body>
 </html>
