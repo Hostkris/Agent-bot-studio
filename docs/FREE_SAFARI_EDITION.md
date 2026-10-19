@@ -38,7 +38,7 @@ The companion API contract is `POST /api/respond` (Bearer token; payload has mes
 
 ## GitHub Pages
 
-Publish this folder at the repository root as `/` and enable **Settings → Pages → Deploy from a branch → main / (root)**. A GitHub Pages site for `Hostkris/Agent-bot-studio` would normally use `https://hostkris.github.io/Agent-bot-studio/`, but **do not treat that URL as live until deployment succeeds**. The application's relative asset URLs are compatible with that base path.
+Publish this folder at the repository root as `/` and enable **Settings → Pages → Build and deployment → Source: GitHub Actions**. A GitHub Pages site for `Hostkris/Agent-bot-studio` would normally use `https://hostkris.github.io/Agent-bot-studio/`, but **do not treat that URL as live until deployment succeeds**. The application's relative asset URLs are compatible with that base path.
 
 ## Legal
 
