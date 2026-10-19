@@ -22,6 +22,21 @@ async function readJson(req) {
 }
 export function createServer({secret=process.env.APP_ACCESS_TOKEN,ai=generate}={}) {
   return http.createServer(async(req,res)=>{
+    // Allow only explicitly approved Safari origins; bearer tokens remain required.
+    const origin=req.headers.origin;
+    const allowed=(process.env.ALLOWED_ORIGIN||'').split(',').map(v=>v.trim()).filter(Boolean);
+    if(origin&&allowed.includes(origin)) {
+      res.setHeader('Access-Control-Allow-Origin',origin);
+      res.setHeader('Vary','Origin');
+      res.setHeader('Access-Control-Allow-Methods','GET, POST, OPTIONS');
+      res.setHeader('Access-Control-Allow-Headers','Content-Type, Authorization');
+    }
+    if(req.method==='OPTIONS') {
+      if(!origin||!allowed.includes(origin)) return json(res,403,{error:'Origin not allowed'});
+      res.writeHead(204);
+      return res.end();
+    }
+
     if(req.method==='GET'&&req.url==='/health') {
       return json(res,200,{
         ok:true,app:'Agent Bot Studio',
